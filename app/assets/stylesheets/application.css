@@ -1,0 +1,401 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,600);
+
+* {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; 
+}
+
+html, html a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+
+html, body {
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-size: 100%;
+        color: #818386;
+        font-family: "Open Sans", sans-serif;
+        background: #f8fafb; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+        color: #393a3c;
+        margin: 0;
+        padding: 0; 
+}
+
+img, embed, object, video {
+        max-width: 100%; }
+
+
+ul, li {
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+}
+
+a {
+        text-decoration: none; 
+        color: #e81b47;
+}
+
+a:hover {
+        text-decoration: none; 
+        color: #eb486b;
+}
+
+::selection {
+        background: #262626;
+        color: #fff;
+}
+
+.clear {
+        clear: both;
+}
+        
+.wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        position: relative; }
+
+header#top {
+        background: #262626;
+        height: 87px;
+}
+
+h1.logo a {
+        display: inline-block;
+        float: left;
+        color: #fff;
+        font-weight: 400;
+        font-size: 100%;
+        margin: 19px 0 0 32px;
+        letter-spacing: -0.05em;
+        width: 450px
+        
+}
+
+header#top nav {
+        display: inline-block;
+        float: right;
+        height: 87px;
+        width: auto;
+}
+
+header#top nav ul li {
+        display: inline-block;
+        float: left;
+}
+
+header#top nav ul li a {
+        display: inline-block;
+        height: 87px;
+        background: none;
+        padding:  33px 20px 0 20px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 90%;
+}
+
+header#top nav ul li a:hover {
+        background: #e81b47;
+}
+
+.mnav {
+        width: 90%;
+        margin: 10px 5% 10px 5%;
+}
+
+@media only screen and (max-width: 640px) {
+        header#top {
+                height: 110px;
+        }
+        h1.logo a {
+                display: block;
+                float: none;
+                margin: 0 auto;
+                width: 90%;
+                text-align: center;
+        }
+}
+
+#banner {
+        height: 466px;
+        background: url("banner-bg.jpg") no-repeat top;
+        position: relative;
+        padding-top: 1px;
+}
+
+#banner h2 {
+        margin: 140px auto 0;
+        top: 140px;
+        padding: 10px;
+        background-color: #e81b47;
+        opacity: 0.9;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+}
+
+@media only screen and (max-width: 1024px) {
+        #banner h2 {
+                font-size: 200%;
+                line-height: 100px;
+                padding: 0;
+                width: 100%;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+        #banner h2 {
+                font-size: 150%;
+                line-height: 80px;
+        }
+}
+
+a.button-1 {
+        color: #fff;
+        background-color: #000;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 155px 15px;
+        display: block;
+        width: 180px;
+        left: 50%;
+        margin-left: -90px;
+        position: absolute;
+        text-align: center;
+        padding: 15px 0;
+}
+
+a.button-1:hover {
+        background: #e81b47;
+        background-image: url(../img/arrow-hover.svg);
+        background-repeat: no-repeat;
+        background-position: 155px 15px;
+        opacity: 0.9;
+        color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+        #banner {
+                height: 420px;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+        #banner {
+                height: 400px;
+        }
+}
+
+ul.filter {
+        display: inline-block;
+        margin: 20px 0px;
+        padding: 30px 10px 15px 10px;
+        float: left;
+        width: 100%;
+        border-bottom: 3px double #e9eef0;
+}
+
+ul.filter li {
+        display: inline-block;
+        float: left;
+}
+
+ul.filter li a {
+        display: block;
+        height: 40px;
+        padding: 5px 20px;
+        color: #262626;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+}
+
+ul.filter li a:hover {
+        color: #666;
+}
+
+ul.filter li.current a {
+        color: #e81b47;
+}
+
+ul.portfolio li {
+        display: inline-block;
+        float: left;
+        margin: 10px;
+        position: relative;
+}
+
+ul.portfolio li .photo-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .8);
+        width: 300px;
+        height: 225px;
+        color: #fff;
+        display: none;
+}
+
+ul.portfolio li:hover .photo-overlay {
+        display: block;
+}
+
+ul.portfolio li .photo-overlay h3 {
+        color: #e64367;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+}
+
+ul.portfolio li .photo-overlay p {
+        color: #fff;
+        font-size: 13px;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+}
+
+ul.portfolio li .photo-overlay .date {
+        color: #c4c4c4;
+        font-size: 13px;
+        position: absolute;
+        top: 190px;
+        right: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+        ul.portfolio {
+        width: 320px;
+        margin: 0 auto;
+        }
+}
+
+.about {
+        background: #292929;
+        margin-top: 80px;
+}
+
+.about ul li {
+        width: 300px;
+        display: inline-block;
+        float: left;
+        margin: 80px 10px;
+        padding: 0 20px;
+        text-align: center;
+}
+
+.about ul li h3 {
+        font-size: 32px;
+        color: #fff;
+        margin-top: 20px;
+}
+
+.about ul li p.job-role {
+        color: #e64367;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 20px;
+}
+
+.about ul li p {
+        color: #fff;
+        font-size: 13px;
+}
+
+@media only screen and (max-width: 640px) {
+        .about ul {
+        width: 320px;
+        margin: 0 auto;
+        }
+}
+
+.blurb h4 {
+        font-size: 23px;
+        font-weight: 600;
+        text-align: center;
+        margin: 40px 0 40px 0;
+        padding: 0 60px;
+}
+
+a.button-2 {
+        color: #fff;
+        background-color: #000;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 155px 15px;
+        display: block;
+        width: 180px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 15px 0;
+}
+
+a.button-2:hover {
+        background: #e81b47;
+        background-image: url(../img/arrow-hover.svg);
+        background-repeat: no-repeat;
+        background-position: 155px 15px;
+        opacity: 0.9;
+        color: #fff;
+}
+
+footer {
+        background: #292929;
+        margin-top: 60px;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+}
+
+footer p {
+        font-size: 14px;
+        font-weight: 600;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e81b47;
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
