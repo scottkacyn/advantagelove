@@ -142,7 +142,7 @@ header#top nav ul li a:hover {
 
 #banner {
         height: 466px;
-        background: url("banner-bg.jpg") no-repeat top;
+        background: url("banner-bg.jpg") no-repeat center;
         position: relative;
         padding-top: 1px;
 }
